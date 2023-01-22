@@ -18,7 +18,7 @@ if (getCookie('user')) changePage(getCookie('user'))
  */
 function requestForm() {
     let xhr = new XMLHttpRequest()
-    xhr.open('POST', 'https://netology-slow-rest.herokuapp.com/auth.php')
+    xhr.open('POST', 'https://students.netoservices.ru/nestjs-backend/auth')
     xhr.responseType = 'json'
     xhr.onload = () => {
         checkResponse(xhr.response)
